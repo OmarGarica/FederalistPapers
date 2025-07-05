@@ -77,7 +77,7 @@ int main() {
                   return a.second > b.second;
               });
 
-    int topCount = std::min(6, static_cast<int>(sortedPairs.size()));
+    int topCount = std::min(3, static_cast<int>(sortedPairs.size()));
     for (int i = 0; i < topCount; i++) {
         std::cout << (i + 1) << ". Key: " << sortedPairs[i].first 
                   << ", Value: " << sortedPairs[i].second << std::endl;
