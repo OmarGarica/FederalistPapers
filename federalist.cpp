@@ -27,7 +27,10 @@ std::string removePunctuation(const std::string& input){
 const int ENTRIES = 3;
 
 int main() {
-    std::string filename = "federalist8.txt";
+    std::cout << "Please enter the filename: ";
+    std::string fname;
+    std::cin >> fname;
+    std::string filename = fname;
     
     std::ifstream file(filename);
     if (!file.is_open()) {
