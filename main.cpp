@@ -15,7 +15,7 @@ int main(){
     
     // Vector to store words (dynamic array)
     std::vector<std::string> words;
-    std::vector<string> cache;
+    std::vector<std::string> cache;
     std::string line;
     
     // Read file line by line
