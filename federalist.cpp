@@ -24,8 +24,10 @@ std::string removePunctuation(const std::string& input){
     return input;
 }
 
+const int ENTRIES = 3;
+
 int main() {
-    std::string filename = "paperone.txt";
+    std::string filename = "federalist8.txt";
     
     std::ifstream file(filename);
     if (!file.is_open()) {
@@ -77,7 +79,7 @@ int main() {
                   return a.second > b.second;
               });
 
-    int topCount = std::min(3, static_cast<int>(sortedPairs.size()));
+    int topCount = std::min(ENTRIES, static_cast<int>(sortedPairs.size()));
     for (int i = 0; i < topCount; i++) {
         std::cout << (i + 1) << ". Key: " << sortedPairs[i].first 
                   << ", Value: " << sortedPairs[i].second << std::endl;
