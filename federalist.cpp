@@ -65,8 +65,8 @@ int main() {
     }
 
     for (int i = 0; i < words.size(); i++) {
-        if(cache.find(words.at(i)) != cache.end()){
-            cache[words[i]]++;
+        if(cache.find(words.at(i)) != cache.end()){ // if find(word[i])  does not equal the end 
+            cache[words[i]]++; // increment value at key words[i]
         } else{
             cache[words[i]] = 0;
         }
@@ -87,7 +87,5 @@ int main() {
         std::cout << (i + 1) << ". Key: " << sortedPairs[i].first 
                   << ", Value: " << sortedPairs[i].second << std::endl;
     }
-
-    
     return 0;
 }
