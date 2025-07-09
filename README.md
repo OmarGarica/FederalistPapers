@@ -9,6 +9,13 @@
 * To use this project copy your work or any work into a text file. 
 * Using that copy the name of that file insert into federalist.cpp into the filename parameter 
 * filename = "(insert text file name here)";
-* compile and it should return top 3 reads
+* compile and it should return top 3 words
 
-Hop you enjoy this cool piece of tech
+## Compiling
+* (You can use different C++ compilers like gcc)
+* clang++ federalist.cpp -o feds
+
+## Running
+* ./feds
+
+Hop you enjoy this cool piece of tech :)
