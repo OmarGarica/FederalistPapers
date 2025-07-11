@@ -8,12 +8,12 @@
 ## Running project
 * To use this project copy your work or any work into a text file. 
 * Using that copy the name of that file insert into federalist.cpp into the filename parameter 
-* filename = "(insert text file name here)";
+ ```filename = "(insert text file name here)";```
 * compile and it should return top 3 words
 
 ## Compiling
 * (You can use different C++ compilers like gcc)
-* clang++ federalist.cpp -o feds
+```clang++ federalist.cpp -o feds```
 
 ## Running
 * ./feds

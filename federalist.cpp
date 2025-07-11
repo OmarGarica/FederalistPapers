@@ -24,7 +24,7 @@ std::string removePunctuation(const std::string& input){
     return input;
 }
 
-const int ENTRIES = 3;
+const int ENTRIES = 10;
 
 int main() {
     std::cout << "Please enter the filename: ";
@@ -60,15 +60,15 @@ int main() {
     std::cout << "\nWords found in the file:" << std::endl;
     std::cout << "Total words: " << words.size() << std::endl;
     std::cout << "----------------------------------------" << std::endl;
-    for(int i = 0; i < words.size(); i++){
-        std::cout << i << ": \t" << words[i] << std::endl;
-    }
+    // for(int i = 0; i < words.size(); i++){
+    //     std::cout << i << ": \t" << words[i] << std::endl;
+    // }
 
     for (int i = 0; i < words.size(); i++) {
         if(cache.find(words.at(i)) != cache.end()){ // if find(word[i])  does not equal the end 
             cache[words[i]]++; // increment value at key words[i]
         } else{
-            cache[words[i]] = 0;
+            cache[words[i]] = 1;
         }
     }
 
