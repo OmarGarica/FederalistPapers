@@ -16,6 +16,6 @@
 ```clang++ federalist.cpp -o feds```
 
 ## Running
-* ./feds
+``` ./feds ```
 
 Hop you enjoy this cool piece of tech :)
